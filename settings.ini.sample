@@ -1,0 +1,31 @@
+;KPBBot Ini settings:
+
+;Conifg, you NEED to change these for the bot to connect to your server!
+[config]
+server="irc.quakenet.org"	;Server (i.e. irc.quakenet.org)
+servshort="quakenet."		;Short servername (i.e quakenet.) this is to stop server message logging.
+nick="KPBot"			;Nick (i.e. PetMonkey)
+port="6667"			;Port (standard: 6667)
+channel="#channel"		;Channel  (i.e. #php)
+domain="adomain.com"		;Domain name, so bot is reckognised as user. (i.e adomain.com)
+name=""				;Bot Name (can leave blank)
+admin_pass="adminpass"		;This is used in commands that want to use password protection.
+log="true"			;Set true to enable logging, any other value will switch logging off.
+[dontlog]
+;These are the nicknames that the bot WILL NOT log.
+;Put as many of these in as you want.
+1="OTIC"
+2="RRO"
+3="O"
+; CAN LEAVE DEFAULT.
+; All commands will be !command if your CMD prefix is !, multiple CMD prefixes allowed.
+[cmdprefix]
+;PLEASE keep the CMD prefixes to 1 character long, lest break all fuctionallity of the bot.
+1="."
+2="!"
+[mysql]
+;DO NOT REMOVE ANY OF THESE VALUES! Only edit them
+host="localhost" 	;Host for mysql connections
+username="root";Username for mysql connections
+password="password"	;Password for mysql connections
+database="kpbotdb"	;Database for mysql connections
